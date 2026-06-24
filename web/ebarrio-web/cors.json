@@ -1,0 +1,7 @@
+[
+  {
+    "origin": ["http://localhost:3000", "https://ebarrio.online"],
+    "method": ["GET"],
+    "maxAgeSeconds": 3600
+  }
+]

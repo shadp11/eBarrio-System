@@ -1,0 +1,105 @@
+.modal-image-container {
+  @apply mt-16 mb-5;
+}
+.modal-image {
+  @apply h-[400px] max-w-full rounded-xl mb-4;
+}
+.success-message {
+  @apply text-green-600 font-semibold;
+}
+.message-area {
+  @apply h-[30px] flex justify-center items-center;
+}
+.btn-container {
+  @apply flex justify-center gap-5 flex-wrap;
+}
+.btn-common {
+  @apply px-5 py-3 bg-blue-600 text-white rounded hover:bg-blue-700;
+}
+.btn-disabled {
+  @apply flex items-center text-white cursor-not-allowed;
+}
+.function-btn {
+  @apply px-6 py-1.5 rounded-[10px]  items-center text-white font-bold;
+}
+.flash-effect {
+  animation: flash 0.5s ease-in-out;
+}
+.camera-container {
+  @apply flex flex-row gap-x-5 items-center justify-center;
+}
+.spinner {
+  @apply mr-3 w-5 h-5 animate-spin text-white;
+}
+
+/*--------------------------------------------FLASH--------------------------------------------*/
+@keyframes flash {
+  0% {
+    background-color: rgba(255, 255, 255, 0); /* Transparent */
+  }
+  50% {
+    background-color: rgba(255, 255, 255, 1); /* White */
+  }
+  100% {
+    background-color: rgba(255, 255, 255, 0); /* Transparent */
+  }
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .modal-content {
+    @apply w-[75%] h-[30rem];
+  }
+
+  .modal-title-bar {
+    @apply h-14 px-3;
+  }
+
+  .modal-image {
+    @apply h-[16rem];
+  }
+
+  .btn-common,
+  .btn-done,
+  .btn-disabled {
+    @apply px-4 py-2 text-sm;
+  }
+}
+
+@media (max-width: 1024px) {
+}
+
+@media (max-width: 640px) {
+  .modal-title-bar {
+    @apply h-12 px-2;
+  }
+
+  .modal-title {
+    @apply text-base;
+  }
+
+  .modal-btn-close {
+    @apply w-10;
+  }
+  .modal-image-container {
+    @apply mt-12;
+  }
+
+  .modal-image {
+    @apply h-[20rem];
+  }
+
+  .btn-container {
+    @apply flex-col gap-3;
+  }
+
+  .btn-common,
+  .btn-done,
+  .btn-disabled {
+    @apply w-full text-sm;
+  }
+
+  .message-area {
+    @apply text-sm;
+  }
+}

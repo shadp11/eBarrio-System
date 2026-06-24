@@ -1,0 +1,18 @@
+.settings-container {
+  @apply flex flex-col lg:flex-row mt-4 gap-10;
+}
+.settings-left-container {
+  @apply flex flex-col mt-4;
+}
+.settings-left-tab {
+  @apply cursor-pointer text-base font-bold;
+}
+.settings-left-tab-active {
+  @apply bg-btn-color-blue rounded-md text-[#fff] w-[14rem] p-2 opacity-70;
+}
+.settings-form-card {
+  @apply w-[30rem] h-auto m-0;
+}
+.settings-btn {
+  @apply bg-btn-color-blue hover:bg-[#0A7A9D] mt-4;
+}

@@ -1,0 +1,18 @@
+.session-container {
+  @apply h-full fixed inset-0 flex items-center justify-center z-50;
+  background: rgba(0, 0, 0, 0.5); 
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+}
+.session-modal {
+  @apply w-[30rem] max-h-[24rem] bg-white rounded shadow flex flex-col overflow-hidden justify-center items-center;
+}
+.session-content-container {
+  @apply flex-1 overflow-y-auto px-4 py-6 flex flex-col items-center;
+}
+.session-icon-container {
+  @apply bg-[rgba(4,56,78,0.3)] p-3 rounded-full;
+}
+.session-icon {
+  @apply text-white text-4xl;
+}

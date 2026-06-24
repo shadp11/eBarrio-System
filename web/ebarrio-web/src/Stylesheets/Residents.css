@@ -1,0 +1,75 @@
+/*--------------------------------------------CREATE RESIDENT--------------------------------------------*/
+.section-title {
+  @apply font-bold text-lg;
+}
+.section-divider {
+  @apply border-t-[1.5px] border-[#C1C0C0] my-1;
+}
+/*--------------------------------------------UPLOAD--------------------------------------------*/
+.picture-upload-wrapper {
+  @apply col-span-1;
+}
+.upload-container {
+  @apply grid grid-cols-2 sm:grid-cols-1 lg:grid-cols-2 gap-4 mt-4;
+}
+.upload-box {
+  @apply bg-btn-color-gray bg-opacity-45 rounded-[10px] p-5;
+}
+.upload-content {
+  @apply flex flex-col justify-between h-full;
+}
+.preview-container {
+  @apply flex items-center justify-center mb-5 w-full h-[200px];
+}
+.upload-picture-btn {
+  @apply flex justify-between;
+}
+.upload-signature-btn {
+  @apply flex justify-end;
+}
+.upload-btn {
+  @apply bg-btn-color-blue text-white px-4 py-2 rounded hover:bg-[#0A7A9D];
+}
+.upload-img {
+  @apply w-full h-full object-contain;
+}
+/*--------------------------------------------FORM--------------------------------------------*/
+.form-label {
+  @apply text-[14px] block text-navy-blue font-title font-medium;
+}
+.form-grid {
+  @apply grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mt-4;
+}
+.form-group {
+  @apply col-span-1;
+}
+.form-input {
+  @apply cursor-pointer w-full h-[40px] rounded-[8px] pl-2 border border-btn-color-gray shadow-sm focus:ring-indigo-500 focus:border-indigo-500 font-subTitle font-medium text-sm appearance-none;
+}
+.function-btn-container {
+  @apply flex justify-end space-x-5 rounded rounded-md;
+}
+.function-btn {
+  @apply px-6 py-1.5 rounded-[10px] items-center text-white font-bold;
+}
+.radio-container {
+  @apply flex flex-row space-x-10;
+}
+.radio-item {
+  @apply flex flex-row justify-center gap-1;
+}
+.checkbox-container {
+  @apply flex flex-col space-y-2;
+}
+.checkbox-btn-container {
+  @apply flex items-center space-x-2;
+}
+.household-tbl-container {
+  @apply min-w-full border border-gray-300;
+}
+.household-tbl-th {
+  @apply border border-gray-300 px-4 py-2;
+}
+.household-tbl-add-btn {
+  @apply flex flex-row items-center justify-center space-x-1 ml-auto mt-4 text-[#0E94D3] border border-[#0E94D3] rounded-full px-1;
+}

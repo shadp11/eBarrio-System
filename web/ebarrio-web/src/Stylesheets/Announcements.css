@@ -1,0 +1,108 @@
+.announcement-container {
+  @apply flex flex-col lg:flex-row mt-4 gap-4;
+}
+.announcement-category-panel {
+  @apply p-4 mb-4 lg:mb-0 border-r w-full lg:w-1/5;
+}
+.announcement-subheader {
+  @apply font-bold mb-2;
+}
+.announcement-left-container {
+  @apply bg-gray-200 rounded-md mt-2;
+}
+.announcement-center-panel {
+  @apply w-2/5 p-4;
+}
+.announcement-create {
+  @apply flex flex-row p-3 rounded-md shadow-md mb-4 bg-white;
+}
+.announcement-create-button {
+  @apply border border-btn-color-gray rounded-[15px] w-full text-start;
+}
+.announcement-card {
+  @apply relative bg-white p-3 mb-4 rounded-md shadow-md;
+}
+.announcement-menu {
+  @apply absolute bg-white border shadow-md right-0 mt-6 w-24;
+}
+.announcement-profile-img {
+  @apply rounded-full w-10 h-10 mr-2 object-contain;
+}
+.announcement-info-label {
+  @apply text-[#808080] text-sm font-subTitle font-bold;
+}
+.announcement-heart-value {
+  @apply text-sm font-subTitle font-bold;
+}
+.announcement-pinned-panel {
+  @apply p-4 border-l w-full lg:w-2/5;
+}
+.announcement-sort-container {
+  @apply flex ml-auto border border-btn-color-gray bg-white w-[6rem] h-[2rem] mb-4 rounded-md shadow-md px-2;
+}
+.announcement-pin-date-menu {
+  @apply absolute top-3 right-3 flex flex-col sm:flex-row gap-2;
+}
+.announcement-sort-dropdown {
+  @apply text-sm font-semibold w-full h-full rounded-md font-subTitle cursor-pointer;
+}
+.announcement-heart {
+  @apply text-btn-color-red text-xs;
+}
+.announcement-time {
+  @apply text-[#808080] text-xs font-medium font-subTitle;
+}
+.announcement-uploadedby-container {
+  @apply flex items-center mb-4;
+}
+.announcement-uploadedby-position {
+  @apply text-[13px] text-[#808080] font-semibold font-subTitle;
+}
+.announcement-heart-container {
+  @apply flex flex-row items-center gap-1 mt-2;
+}
+.announcement-menu-text {
+  @apply text-sm font-semibold ml-2 font-subTitle;
+}
+
+.create-announcement-form-container {
+  @apply h-full flex flex-col gap-2;
+}
+.create-announcement-scrollable-area {
+  @apply flex-[1.5] w-full overflow-y-auto flex-col space-y-2 mb-4;
+}
+.create-announcement-uploader {
+  @apply flex items-center w-full;
+}
+.create-announcement-info-container {
+  @apply flex flex-col items-start ml-2;
+}
+.create-announcement-attach-box {
+  @apply w-full border border-solid border-gray-300 p-4 rounded-[15px] relative;
+}
+.create-announcement-close-btn {
+  @apply absolute top-2 right-2 cursor-pointer hover:text-red-600 font-medium text-xl;
+}
+.create-announcement-attach-img {
+  @apply w-full h-[30rem] mt-2 rounded-[15px] object-cover;
+}
+.create-announcement-fixed-btns {
+  @apply flex flex-row items-center justify-between border p-3 w-full rounded-[8px] border-btn-color-gray mb-4;
+}
+.create-announcement-event-details {
+  @apply w-[30rem] h-[15rem] absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 rounded-tl-xl rounded-tr-xl rounded-bl-xl rounded-br-xl shadow-lg flex flex-col justify-center items-center;
+}
+.create-announcement-text {
+  @apply ml-3 font-subTitle text-[#808080] font-semibold text-[16px];
+}
+.create-announcement-bottom-container {
+  @apply flex-[0.5] w-full;
+}
+.create-announcement-icons {
+  @apply w-[2rem] h-[2rem];
+}
+
+.timedate-label {
+  @apply font-subTitle text-[14px] font-medium w-full pl-2 mt-3;
+}
+

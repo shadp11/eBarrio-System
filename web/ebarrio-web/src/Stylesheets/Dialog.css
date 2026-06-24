@@ -1,0 +1,21 @@
+.dialog-title-bar {
+  @apply w-full h-[3rem] rounded-tl-xl rounded-tr-xl bg-[#fff] flex items-center justify-between;
+}
+.dialog-title-bar-items {
+  @apply flex flex-row justify-between items-center h-12 px-4;
+}
+.dialog-title-bar-title {
+  @apply text-lg font-bold text-gray-400 font-title;
+}
+.dialog-title-bar-icon {
+  @apply text-2xl text-[#969696] hover:text-red-600 cursor-pointer;
+}
+.dialog-line {
+  @apply w-full border-t-2 border-gray-400;
+}
+.dialog-question {
+  @apply font-bold text-[20px] mb-2 text-center mt-2 font-title text-navy-blue w-[300px];
+}
+.dialog-message {
+  @apply text-[#808080] text-sm mb-0 font-subTitle font-semibold w-[310px] text-center;
+}

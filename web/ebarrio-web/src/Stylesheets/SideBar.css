@@ -1,0 +1,84 @@
+.page-grid {
+  @apply relative font-title;
+}
+.page-grid.collapsed .sidebar {
+  @apply w-[theme('spacing.sidebar-collapsed')];
+}
+.sidebar {
+  @apply fixed 
+    text-white 
+    p-4 
+    transition-all
+    ease-in-out 
+    duration-300 
+    overflow-hidden 
+    top-0 
+    left-0 
+    z-40 
+    h-full
+    w-[theme('spacing.sidebar-collapsed')]
+    md:w-[theme('spacing.sidebar')]
+    lg:w-[theme('spacing.sidebar')];
+  background-image: linear-gradient(
+    to bottom,
+    #0e94d3 0%,
+    #0a70a0 50%,
+    #095e86 75%,
+    #074c6d 100%
+  );
+}
+.sidebar-toggle-btn {
+  @apply text-white 
+    text-2xl 
+    top-5 
+    cursor-pointer;
+}
+.sidebar-logo-container {
+  @apply flex 
+  flex-col
+  items-center  
+  duration-300;
+}
+.sidebar-logo-img {
+  @apply w-32
+    transition-transform 
+    duration-300
+    mt-[0px]
+    md:mt-[-20px]
+    lg:mt-[-20px];
+}
+.sidebar-app-name {
+  @apply font-title font-bold md:text-[24px] lg:text-[24px] sm:text-[16px] hidden md:block lg:block;
+}
+.sidebar-menu {
+  @apply h-[40px]
+    mt-5;
+}
+.sidebar-menu-item {
+  @apply flex 
+    items-center 
+    w-full 
+    rounded-lg 
+    h-full
+    text-white 
+    cursor-pointer;
+}
+.sidebar-menu-item-icon {
+  @apply text-2xl 
+    text-white;
+}
+.sidebar-menu-item-title {
+  @apply font-title text-[16px] font-light ml-3 hidden md:block lg:block;
+}
+.sidebar-active {
+  @apply bg-[#fff] w-full h-full rounded-lg text-white font-bold bg-opacity-40;
+}
+
+/*--------------------------------------------HIDE SCROLL BAR--------------------------------------------*/
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.hide-scrollbar {
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+}

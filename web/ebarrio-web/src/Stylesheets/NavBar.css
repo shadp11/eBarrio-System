@@ -1,0 +1,159 @@
+.page-grid.collapsed .navbar {
+  @apply left-[theme('spacing.sidebar-collapsed')];
+  width: calc(100% - theme("spacing.sidebar-collapsed"));
+}
+.navbar {
+  @apply shadow-[0px_0px_4px_0px_rgba(0,0,0,0.5)] 
+    fixed 
+    bg-[#fff] 
+    transition-[left,width] 
+    duration-300 
+    top-0 
+    z-20 
+    h-[theme('spacing.navbar-height')];
+  width: calc(100% - theme("spacing.sidebar"));
+}
+.navbar-right {
+  @apply flex 
+    flex-wrap sm:flex-nowrap
+    justify-end 
+    items-center 
+    gap-3 
+    mt-1
+    mr-2;
+}
+.navbar-icon {
+  @apply text-2xl sm:text-2xl 
+    cursor-pointer
+    text-[#04384E];
+}
+.navbar-user-info {
+  @apply flex 
+    flex-col 
+    items-start 
+    -space-y-1
+    text-sm 
+    sm:text-base;
+}
+.navbar-profile-img {
+  @apply w-9 h-9 object-contain
+    rounded-full;
+  box-shadow: inset 0 2px 8px rgba(0, 0, 0, 0.5);
+}
+.navbar-dropdown {
+  @apply absolute 
+    right-0 
+    mt-2 
+    bg-white 
+    shadow-md 
+    rounded-md
+    border
+    w-52;
+}
+.navbar-dropdown-item {
+  @apply inline-flex 
+    py-2 
+    cursor-pointer 
+    hover:bg-gray-200
+    w-full 
+    rounded-md
+    items-center;
+}
+
+/*--------------------------------------------SETTINGS--------------------------------------------*/
+.signout-icon {
+  @apply text-red-500 text-lg ml-3;
+}
+.account-icon {
+  @apply text-text-blue text-lg ml-3;
+}
+.account-text {
+  @apply text-navy-blue font-bold px-4 py-2 text-[15px];
+}
+.signout-text {
+  @apply text-red-500 font-bold px-4 py-2 text-[15px];
+}
+
+/*--------------------------------------------NOTIFICATION--------------------------------------------*/
+.notif-dot {
+  @apply absolute left-1 rounded-full w-2 h-2 ml-2 mt-1 mr-3 flex-shrink-0 bg-red-500;
+}
+.notif-dropdown-container {
+  @apply absolute right-0 mt-4 bg-[#FAFAFA] shadow-[0px_4px_4px_0px_rgba(0,0,0,0.25)] rounded-[10px] w-[24rem] h-[20rem] border border-[#C1C0C0] flex flex-col;
+}
+.notif-header-container {
+  @apply flex flex-row justify-between items-center px-3 py-2;
+}
+.notif-title-container {
+  @apply flex flex-row items-center;
+}
+.notif-title {
+  @apply text-navy-blue text-lg font-bold;
+}
+.notif-count {
+  @apply text-xs bg-[#BC0F0F] text-[#fff] px-1 rounded-full ml-2;
+}
+.notif-filter-icon {
+  @apply text-navy-blue text-lg font-medium cursor-pointer;
+}
+.notif-filter-dropdown {
+  @apply absolute bg-white shadow-md rounded-md border;
+}
+.notif-filter-item {
+  @apply py-1 px-3 cursor-pointer hover:bg-gray-200 w-full rounded-md items-center;
+}
+.notif-filter-text {
+  @apply text-sm font-title text-[#0E94D3];
+}
+.notif-list-container {
+  @apply overflow-y-auto flex-grow border-t border-b border-[#C1C0C0];
+}
+.notif-empty-container {
+  @apply flex justify-center items-center h-full;
+}
+.notif-empty-text {
+  @apply text-[#808080] text-sm;
+}
+.notif-item-container {
+  @apply flex flex-col hover:bg-gray-200 cursor-pointer;
+}
+.notif-item-inner {
+  @apply flex justify-between my-2 px-3;
+}
+.notif-item-text-container {
+  @apply flex flex-col;
+}
+.notif-title-text {
+  @apply text-navy-blue font-subTitle text-[12px];
+}
+.notif-time-text {
+  @apply text-[#808080] text-[12px] font-subTitle font-semibold;
+}
+.notif-read-dot {
+  @apply rounded-full w-2 h-2 mr-3 mt-1 flex-shrink-0;
+}
+.notif-markall {
+  @apply text-navy-blue text-xs font-semibold cursor-pointer whitespace-nowrap;
+}
+
+/*--------------------------------------------USER--------------------------------------------*/
+.user-name-text {
+  @apply text-navy-blue font-bold text-base;
+}
+.user-role-text {
+  @apply text-[#808080] text-sm font-semibold font-subTitle;
+}
+
+/*RESPONSIVE*/
+@media (max-width: 640px) {
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    @apply left-[theme('spacing.sidebar-collapsed')];
+    width: calc(100% - theme("spacing.sidebar-collapsed"));
+  }
+}
+
+@media (max-width: 1024) {
+}

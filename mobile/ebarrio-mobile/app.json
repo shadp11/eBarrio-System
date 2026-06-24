@@ -1,0 +1,60 @@
+{
+  "expo": {
+    "name": "eBarrio",
+    "slug": "client",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/applogo-lightbg.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "assetBundlePatterns": ["assets/**/*"],
+    "ios": {
+      "supportsTablet": true,
+      "runtimeVersion": {
+        "policy": "appVersion"
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "package": "com.knicoleknicole.client",
+      "permissions": ["NOTIFICATIONS", "NOTIFICATIONS"],
+      "googleServicesFile": "./android/app/google-services.json",
+      "runtimeVersion": "1.0.0"
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      "expo-secure-store",
+      "expo-font",
+      [
+        "expo-notifications",
+        {
+          "color": "#ffffff",
+          "googleServicesFile": "./android/app/google-services.json"
+        }
+      ],
+      [
+        "expo-maps",
+        {
+          "googleMapsApiKey": "AIzaSyC3T3SOxoBKrTVpuJwvxGZIBQKg2iuFHGE"
+        }
+      ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "5bd75858-4c47-40a4-bb3a-01fc8150deb0"
+      }
+    },
+    "updates": {
+      "url": "https://u.expo.dev/5bd75858-4c47-40a4-bb3a-01fc8150deb0"
+    }
+  }
+}

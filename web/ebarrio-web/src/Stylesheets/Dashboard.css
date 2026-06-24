@@ -1,0 +1,92 @@
+/*--------------------------------------------DEMOGRAPHICS--------------------------------------------*/
+.demog-card-container {
+  @apply h-28 flex items-center relative bg-[#fff] rounded-[10px] p-4 shadow-[0px_1px_2px_1px_rgba(0,0,0,0.3)]  transition-all duration-300 ease-in-out;
+}
+.demog-card-left-border {
+  @apply absolute top-0 left-0 h-full w-1 rounded-l-md;
+}
+.demog-text {
+  @apply font-title text-[18px] font-semibold whitespace-nowrap;
+}
+.demog-total {
+  @apply font-title text-[28px] font-bold;
+}
+.demog-icon {
+  @apply text-gray-300 text-[40px];
+}
+.icon-image {
+  filter: grayscale(100%) brightness(70%) opacity(0.3);
+}
+/*--------------------------------------------REPORTS--------------------------------------------*/
+.reports-container {
+  @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4;
+}
+.reports-title {
+  @apply text-base font-medium text-center text-navy-blue;
+}
+.reports-empty-container {
+  @apply w-full h-[16rem] flex items-center justify-center;
+}
+.reports-empty-label {
+  @apply text-center text-gray-600;
+}
+/*--------------------------------------------EVENTS CALENDAR--------------------------------------------*/
+.legend-container {
+  @apply flex flex-row items-center;
+}
+.legend-box {
+  @apply w-4 h-4 rounded-md;
+}
+.legend-text {
+  @apply ml-4 text-sm font-subTitle font-[600];
+}
+.fc .fc-button {
+  @apply bg-[#0E94D3] text-white font-semibold px-3 py-1 rounded-md border-0;
+}
+.fc .fc-toolbar-title {
+  @apply text-[#04384E] text-[24px] font-semibold;
+}
+.fc .fc-button:hover {
+  @apply bg-[#58C8E2];
+}
+.fc .fc-button.fc-button-active {
+  @apply bg-[#04384E] text-white !important;
+}
+.fc-event-title {
+  @apply font-title text-[10px];
+}
+.fc-event-time {
+  @apply font-subTitle text-[9px];
+}
+.fc-timegrid-event {
+  @apply flex flex-col justify-center items-center h-full min-h-full p-1 rounded-md overflow-hidden text-center;
+}
+.fc-daygrid-event {
+  @apply flex flex-col items-center;
+}
+.fc-month-view .fc-event-title,
+.fc-month-view .fc-event-time {
+  @apply text-black leading-snug whitespace-normal break-words flex-col;
+}
+.fc-week-view .fc-event-title,
+.fc-week-view .fc-event-time,
+.fc-day-view .fc-event-title,
+.fc-day-view .fc-event-time {
+  @apply text-white leading-snug;
+}
+/* Day and Week View (timeGrid) */
+.fc .fc-timegrid-col.fc-day-today {
+  background-color: #d9f1ff !important;
+}
+/* Month View (dayGrid) */
+.fc .fc-daygrid-day.fc-day-today {
+  background-color: #d9f1ff !important;
+}
+/* Responsive layout for FullCalendar toolbar */
+.fc .fc-toolbar {
+  @apply flex flex-col gap-2 md:flex-row md:items-center md:justify-between;
+}
+
+.fc .fc-toolbar-chunk {
+  @apply flex flex-wrap justify-center md:justify-start items-center gap-2;
+}

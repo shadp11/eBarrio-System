@@ -1,0 +1,27 @@
+.search-container {
+  @apply mt-4 
+    rounded-xl 
+    border 
+    border-[#C1C0C0] 
+    flex 
+    items-center 
+    h-10 
+    w-full 
+    bg-white p-3;
+}
+.search-items {
+  @apply flex 
+    items-center 
+    space-x-2 
+    w-full;
+}
+.search-input {
+  @apply w-full 
+  font-subTitle font-semibold
+    h-full 
+    border-none 
+    outline-none 
+    pl-2 
+    text-sm 
+    text-gray-700;
+}
