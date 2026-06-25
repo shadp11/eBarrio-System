@@ -39,7 +39,7 @@ cd eBarrio-System/web/ebarrio-web
 npm install
 ```
 
-### Start the App
+### 3. Start the App
 
 ```bash
 npm start
