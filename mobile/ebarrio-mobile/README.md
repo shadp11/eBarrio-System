@@ -51,7 +51,7 @@ npx expo start
 
 ### 4. Run the App
 
-- Scan the QR Code using Expo Go Or press a to open the project in Android emulator
+- Scan the QR Code using Expo Go or press a to open the project in Android emulator
 
 ## Backend dependency
 
