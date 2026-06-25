@@ -2,7 +2,7 @@
 
 ## Overview
 
-The eBarrio Mobile App residents with easy access to barangay services through their mobile devices. Users can receive community updates, access digital services, communicate with barangay officials, and use emergency and disaster management features, all within a single platform.
+The eBarrio Mobile App helps residents with easy access to barangay services through their mobile devices. Users can receive community updates, access digital services, communicate with barangay officials, and use emergency and disaster management features, all within a single platform.
 
 ## Features
 
